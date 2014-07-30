@@ -3,7 +3,7 @@ RestPluginTemplate
 
 This is a template extension for the [ILIAS REST Plugin](https://github.com/eqsoft/RESTPlugin).
 
-This extension can be used as a starting point when developing new extensions.
+This extension can be used as a starting point for developing new extensions.
 
 #### Features:
 It provides exemplary routes to create, read, update and delete simple "items" (CRUD).
