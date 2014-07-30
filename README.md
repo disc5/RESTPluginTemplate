@@ -25,8 +25,8 @@ Example
 </code></pre>
 
 #### Notes:
-As you might have read in the [tutorial](https://github.com/eqsoft/RESTPlugin/wiki/Extensions), in the model class the application
-logic is located. In this example template, database accesses are realized via the ILIAS db abstraction class. Of course other scenarios
+As you might have read in the [tutorial](https://github.com/eqsoft/RESTPlugin/wiki/Extensions), the application
+logic is located in the model classes. In this example template, database accesses are realized via the ILIAS db abstraction class in its model. Of course other scenarios
 are possible and even more likely, e.g. dealing with ILIAS objects directly instead of accessing single database tables.
 
 It is probably easier at the beginning not to secure the routes under development, but it should be kept in mind, that some kind of access control should be provided at the end (see tutorial).
