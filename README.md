@@ -5,6 +5,9 @@ This is a template extension for the [ILIAS REST Plugin](https://github.com/eqso
 
 This extension can be used as a starting point when developing new extensions.
 
+As any other extension, to use the template together with the ILIAS REST Plugin you need to copy the folder
+template to the extensions folder of the plugin (e.g. Rest/RESTController/extensions/template).
+
 #### Features:
 It provides exemplary routes to create, read, update and delete simple "items" (CRUD).
 
