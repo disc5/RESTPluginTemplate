@@ -24,8 +24,7 @@ You need to install the [ILIAS REST Plugin](https://github.com/eqsoft/RESTPlugin
 Then, as any other extension, you need to copy the folder
 "template" to the extensions folder of the plugin (i.e. Rest/RESTController/extensions/template).
 
-Example
-You can test the template by using the command line tool "cURL". You should retrieve the content of the table dev_items.
+You can test the template extension by using the command line tool "cURL". You should retrieve the content of the table dev_items.
 <pre><code>curl -X GET http://localhost/restplugin.php/template/items
 </code></pre>
 
