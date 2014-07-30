@@ -1,0 +1,66 @@
+<h3>Template for Developers and API Designers</h3>
+<h4>Description</h4>
+<p>This extension can be used as a template or starting point when developing new extensions.
+</p>
+<p>Note: If you want to enable this extension. You need to create a database table, because the model relies on it:</p>
+<pre>
+CREATE TABLE IF NOT EXISTS `dev_items` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(1000) NOT NULL,
+  `description` varchar(1024) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+</pre>
+
+<h4>Endpoints</h4>
+<table class="table table-bordered">
+    <thead>
+        <th>Endpoint</th>
+        <th>Verb</th>
+        <th>Parameters</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/template/items</td>
+            <td>GET</td>
+            <td></td>
+            <td>Retrieves all items.</td>
+        </tr>
+        <tr>
+            <td>/template/items/:item_id</td>
+            <td>GET</td>
+            <td></td>
+            <td>Retrieves the item with :item_id.</td>
+        </tr>
+        <tr>
+            <td>/template/items</td>
+            <td>POST</td>
+            <td>$a_data['name'], $a_data['description']</td>
+            <td>Creates a new item.</td>
+        </tr>
+        <tr>
+            <td>/template/items/:item_id</td>
+            <td>PUT</td>
+            <td>$a_data['name'], $a_data['description']</td>
+            <td>Updates item with :item_id.</td>
+        </tr>
+        <tr>
+            <td>/template/items/:item_id</td>
+            <td>DELETE</td>
+            <td></td>
+            <td>Deletes the item with :item_id.</td>
+        </tr>
+        <tr>
+            <td>/template/items</td>
+            <td>DELETE</td>
+            <td></td>
+            <td>Deletes all items.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h4>Examples</h4>
+<h5>Gets a list of items</h5>
+<pre>curl -X GET http://localhost/restplugin.php/template/items</pre>
+
